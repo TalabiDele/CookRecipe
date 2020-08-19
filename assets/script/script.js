@@ -37,7 +37,7 @@ function displayRecipe(data) {
         <img src=${meal.recipe.image}>
         <h3>${meal.recipe.label}</h3>
         <p>${meal.recipe.source}</p>
-        <button class='more_info btn' data-label="${meal.recipe.label}" data-uri="${meal.recipe.uri}">More</button>
+        <button class='more_info btn' data-label="${meal.recipe.label}" data-uri="${meal.recipe.shareAs}">More</button>
       </div>`
       )
       .join("")}
@@ -65,10 +65,10 @@ function removeModal() {
 
 async function displayRecipeModal(recipeUri) {
   const res = await fetch(
-    `https://cors-anywhere.herokuapp.com/${recipeUri}&aapp_id=${appId}&app_key=${appKey}`
+    `https://cors-anywhere.herokuapp.com/${recipeUri}`
   );
   const data = await res.json();
-  console.log(recipeUri)
+  console.log(data)
 }
 
 window.onscroll = function () {
