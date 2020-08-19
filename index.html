@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>CookRecipe</title>
+  </head>
+  <body>
+    <section class="hero_page" id="landing_page">
+      <div class="nav_bar">
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="">
+                <img src="/assets/img/logo 2@4x.png" alt="" width="150px" />
+              </a>
+            </li>
+            <div class="navigation">
+              <li><a href="">Home</a></li>
+              <li><a href="">Recipes</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="header" id="header">
+        <h1>
+          Cook Your Meals <br />
+          <span class="conv">Conveniently</span>
+          <span class="easy">Easily</span>
+          <span class="fam">With Family</span>
+        </h1>
+        <!-- <button id="get_started_btn" class="btn-large btn">Get Started</button> -->
+      </div>
+      <div class="search_recipe" id="search_recipe">
+        <input type="text" placeholder="Search Recipe" id="search-recipe" /> <br>
+        <button class="btn btn-small" id="search-btn">Search</button>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <h1 class="search-header"></h1>
+      <!-- <div class="search_recipe" id="search_recipe">
+        <input type="text" placeholder="Search Recipe" id="search-recipe" />
+        <button class="btn btn-small" id="search-btn">Search</button>
+      </div> -->
+      <div class="recipe_display"></div>
+    </section>
+
+    <div class="modal modal-hide">
+      <div class="modal-card">
+        <a><i class="fas fa-times remove-modal-btn"></i></a>
+      </div>
+    </div>
+
+    <script src="/assets/script/script.js"></script>
+  </body>
+</html>
