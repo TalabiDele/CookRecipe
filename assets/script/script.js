@@ -33,7 +33,7 @@ function displayRecipe(data) {
   output.innerHTML = `
     ${data.hits
       .map(
-        (meal) => `<div class="card">
+        (meal) => `<div class="card" id="${Math.random()}">
         <img src=${meal.recipe.image}>
         <h3>${meal.recipe.label}</h3>
         <p>${meal.recipe.source}</p>
